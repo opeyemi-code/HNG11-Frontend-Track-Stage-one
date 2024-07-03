@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  background-color: #8ecae6;
+  height: 100vh;
+}
+
+.card {
+  background-color: #023047;
+  padding: 20px;
+  border: white 2px solid;
+}
+
+img {
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px white solid;
+  margin-bottom: 10px;
+}
+
+.profile-list {
+  list-style: none;
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.list-item {
+  margin-bottom: 10px;
+}
+
+.slack-name,
+.current-time,
+.email,
+.current-day {
+  color: #ffb703;
+  font-weight: bold;
+}
+
+.goal-heading {
+  text-align: center;
+  color: #8ecae6;
+  margin: 10px 0;
+}
+
+.goal-list {
+  color: #fff;
+  margin: 0 5px;
+}
+
+.goal-list li::marker {
+  color: #ffb703;
+}
+
+footer {
+  margin-top: 15px;
+}
+
+.link-heading {
+  color: #8ecae6;
+  margin-bottom: 5px;
+}
+
+.link-item {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.link-item a {
+  color: #ffb703;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8ecae6;
+  font-weight: bold;
+}
+
+@media (min-width: 576px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: -6px 15px 16px 10px rgba(0, 0, 0, 0.75);
+  }
+
+  .profile-list {
+    margin-top: 20px;
+  }
+
+  .section-1,
+  .section-2 {
+    width: 50%;
+  }
+}
